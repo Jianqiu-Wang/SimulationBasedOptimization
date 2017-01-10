@@ -1,0 +1,52 @@
+\documentclass[letterpaper]{article}
+\usepackage[top=0.5in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[procnames]{listings}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{subcaption}
+
+%---------------------Begin of Document-----------------------------------------------------
+\begin{document}
+\title{ Progress Report}
+\author{Jianqiu Wang}
+\date{\today}
+\maketitle
+%-----------------
+\section{Study of PySOT}
+\subsection{Brief Introduction to PySOT}
+PySOT is a tool box designed for solving both continuous and discontinuous surrogated optimization problems.
+\subsection{Apply PySOT to Two-node Network}
+Based on this paper??, we simply consider a network with one supplier and receiver. We use the case in part 7, only consider node 1 and node 4.
+\subsection{Important Concepts}
+\begin{itemize}
+\item{On-hand inventory} The inventory in stock
+\item{On-order inventory} The ordered inventory but not yet shipped
+\item{Backorder} Unsatisfied order
+\item{Inventory position} Amount of order we \'have\': on-hand + on-order - backorder
+\end{itemize}
+
+\subsubsection{Model Assumption}
+\begin{itemize}
+\item A demand-driven inventory system under base-stock policy and order rationing policy
+\item General network structure for the inventory system (all the pri- mary supplier, secondary supplier and direct customer node(s) of each node are designated, if any)
+instead: one supplier and one director customer node
+\item Length of planning horizon: 200 days with 100 days of warm-up simulation
+\item Length of review cycle for each inventory
+\item Probability distributions of demands at sales regions
+node 2: Normal(150,30)
+\item Probability distributions of the delivery preparation times
+(include but not limited to time for reprocessing, transportation,
+sub-packaging, etc.) at each inventory node 
+node 1: Uniform(2,4) 
+\item Lower bounds for service levels at each node:
+node 1: 0.70
+node 2: 0.95
+\item unit holding cost, unit backordering cost: 1 m.u./unit/day
+\end{itemize}
+\subsubsection{Objective}
+\subsubsection{Source of Uncertainties}
+
+\subsection{Simulation Process}
+\end{document}
