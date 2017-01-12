@@ -1,0 +1,26 @@
+\documentclass[letterpaper]{report}
+\usepackage[top=0.5in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[procnames]{listings}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{subcaption}
+
+%---------------------Begin of Document-----------------------------------------------------
+\begin{document}
+\title{Notes of F. Boulouvala 2015 paper}
+\author{Jianqiu Wang}
+\maketitle
+\paragraph{Introduction}
+\begin{itemize}
+\item{Grey-box problem:} A combination of constrains or objective functions with known and unknown functional forms
+\item{Why not deterministic global optimization:} high computational cost, unreliable derivative information from noise, discontinuity of obj fcn/constraints, and lack of model equations if only given input-output data (Would it be similar to financial time series data?)
+\item{Promising approach:} surrogate approximation models for unknown equations of system.(Through which we may apply derivative-based optimization).
+\item{Why global optimization of surrogate model necessarry:} Usually the most efficient surrogate functional forms are multimodal ( with serveral peaks )
+\item{How we treated:} Compilatioon of determnistic global optimization subproblems with sampling and design of experiments, parameter estimation and global optimization of surrogate formulations.
+\item{3 important questions:} 1. Variability of initial sample points would affect consitensy of grey-box algorithm( Consistency?) 2. Using deterministic global optimization is important, why? 3. Selection of surrogate function?
+\end{itemize}
+\paragraph{Problem Formulation and Literature Review}
+
+\end{document}

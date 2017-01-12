@@ -1,0 +1,20 @@
+\documentclass[letterpaper]{article}
+\usepackage[top=0.5in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[procnames]{listings}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{subcaption}
+
+%---------------------Begin of Document-----------------------------------------------------
+\begin{document}
+\title{None}
+\author{Jianqiu Wang}
+\date{\today}
+\maketitle
+%-----------------
+\begin{itemize}
+\item Consider including distance as a factor when applying stochastic optimization
+\end{itemize}
+\end{document}

@@ -9,7 +9,7 @@
 
 %---------------------Begin of Document-----------------------------------------------------
 \begin{document}
-\title{ Progress Report}
+\title{ Notes of Week Jan 09, 2017}
 \author{Jianqiu Wang}
 \date{\today}
 \maketitle
@@ -17,7 +17,7 @@
 \section{Study of PySOT}
 \subsection{Brief Introduction to PySOT}
 PySOT is a tool box designed for solving both continuous and discontinuous surrogated optimization problems.
-\subsection{Apply PySOT to Two-node Network}
+\section{Apply PySOT to Two-node Network}
 Based on this paper??, we simply consider a network with one supplier and receiver. We use the case in part 7, only consider node 1 and node 4.
 \subsection{Important Concepts}
 \begin{itemize}
@@ -48,5 +48,16 @@ node 2: 0.95
 \subsubsection{Objective}
 \subsubsection{Source of Uncertainties}
 
-\subsection{Simulation Process}
+\section{Simulation Process}
+\subsection{Discrete-Event System}
+When running stochastic simulation of discrete-event system, we treat them as as generalized semi-Markov processe (Stochastic Simulation, page 65). We define two sets: set $S$: states of node,
+and set $E$: set of possible events that can trigger state transitions. We will determine state transitions by competing clocks: when a event $e\in E$ is scheduled, the clock runs down at predetermined rate, and when it counts to $0$, the event happens and state changes. Then usually we need to reschedule new event.
+\subsection{Simulation Algorithm for a general model}
+\begin{itemize}
+\item{1. Initialization:} Set the simulation clock $T$ to 0. Choose the initial system state $X$ and event clock readings $\{C_i\}$.
+\item{2.} Let $T=\min_iC_i$ be advanced to the time of the next event and let $I$ be the index of the clock reading that achieves this minimum.
+\item{3.} Execute the logic associated with event $I$, including updating the system state $X$ and event clock $\{C_i\}$.
+\item{4.} Go to Step 2.
+\end{itemize}
+
 \end{document}
