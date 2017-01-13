@@ -123,6 +123,7 @@ while (t < 1):
             	fac.orderPlaced(fac.oq)     
             	fac.root.invSend(fac.oq)
            
+           
 
 	
     if facorder.fac_from != 0:
